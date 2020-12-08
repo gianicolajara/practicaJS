@@ -7,7 +7,7 @@ export const capicua = n => {
 }
 
 export const factorial = n => {
-    if(n && typeof n === 'number' && n > 0){
+    if(typeof n === 'number' && n >= 0){
         let fac = 1;
         for(let i = 1; i <= n; i++) fac *= i;
         return fac;
