@@ -13,7 +13,7 @@ export const primo = n => {
     }else return 'invalido'
 }
 
-export const imparPar = n => (n && typeof n === 'number' && n > 0)
+export const imparPar = n => (n && typeof n === 'number')
                                 ? (n%2===0) ? 'Par' : 'Impar'
                                 : 'Invalido'
 
