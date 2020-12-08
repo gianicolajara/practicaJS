@@ -1,8 +1,10 @@
 export const randomNumber = () => Math.floor(Math.random() * (600-501) + 501)
 
 export const capicua = n => {
-    return (n && Number.isInteger(n) && n > 0)
-        ? n === parseInt(n.toString().split('').reverse().join(''))
+    return (n && typeof n === 'number' && n > 0)
+        ? (
+            n.toString() === n.toString().split('').reverse().join('')
+        )
         : 'invalido'
 }
 
