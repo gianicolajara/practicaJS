@@ -6,7 +6,7 @@ export const contarPalabras = (p, b) => {
     let reg = null;
     return ((p && typeof p === 'string' && p.length > 0) && (b && typeof b === 'string' && b.length > 0))
         ? (
-            reg = RegExp(`${b}{0,}`, 'gi'),
+            reg = RegExp(`${b}`, 'g'),
             p.match(reg).length
         ) :(
             'invalido'
