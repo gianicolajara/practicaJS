@@ -14,7 +14,8 @@ export const contarPalabras = (p, b) => {
 }
 
 export const palindromo = p => {
-    return (p && p === 'string' && p.length > 0) 
+  let newP = null;
+    return (p && typeof p === 'string' && p.length > 0) 
         ?
             (
             newP = p.normalize('NFD').replace(/[\u0300-\u036f,. ]/g, "").toLowerCase(),
