@@ -1,11 +1,13 @@
 export const primo = n => {
     if(n && typeof n === 'number' && n > 1){
         let count = 0;
-
-        for(let i = 1; i <= n ; i++)
-            if(n%i === 0) count += 1
-
-        if(count > 2)return 'No es primo'
+        for(let i = 2; i <= n ; i++){
+            if(n%i === 0){
+                count += 1
+                if(count > 1) break;
+            }
+        }
+        if(count > 1)return 'No es primo'
         else return 'Es primo'
 
     }else return 'invalido'
