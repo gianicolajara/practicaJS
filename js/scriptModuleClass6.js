@@ -7,5 +7,5 @@ export const nombreValido = n => (n && typeof n === 'string' && n.length > 0)
                                     : 'Invalido'
 
 export const emailValido = e => (e && typeof e === 'string' && e.length > 0)
-                                    ?(RegExp(/^[\w.]+\@+[a-z0-9]+\.[a-z]{2,3}$/, 'g').test(e))
+                                    ?(RegExp(/^[\w.]+\@+[a-z0-9]+\.[a-z]{2,15}$/, 'g').test(e))
                                     : 'Invalido'
