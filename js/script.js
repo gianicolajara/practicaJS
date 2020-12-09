@@ -1,3 +1,3 @@
-import { revertirPalabra, contarPalabras, palindromo, eliminarPalabra } from './scriptModule.js'
+import { letras, nombreValido, emailValido } from './scriptModuleClass6.js'
 
-console.log(eliminarPalabra('xyz1, xyz2, xyz3, xyz4 y xyz5', 'xyz'));
+console.log(emailValido('jonmircha@gmail.com'))
