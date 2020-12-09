@@ -1,5 +1,5 @@
 export const letras = p => (p && typeof p === 'string') 
-                               ? `Vocales ${p.match(/[aeiou]/gi).length} consonantes ${p.match(/[b-df-hj-np-tv-z]/gi).length}`
+                               ? `Vocales ${p.match(/[aeiou]/gi).length} consonantes ${p.match(/[b-df-hj-np-tv-zñ]/gi).length}`
                                : 'invalido'
                     
 export const nombreValido = n => (n && typeof n === 'string')
