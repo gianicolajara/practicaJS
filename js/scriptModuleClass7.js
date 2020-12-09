@@ -13,4 +13,3 @@ export const parImpar = n => {
         return { pares, impares }
     }
 }
-                                
