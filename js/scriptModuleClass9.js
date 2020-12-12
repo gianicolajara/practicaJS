@@ -53,13 +53,13 @@ export class Pelicula{
         }
     }
 
-    validarReg(indicativo, valor, regexp, messageError, tipoDato, longitud){
+    validarReg(indicativo, valor, regexp, mensajeError, tipoDato, longitud){
         try {
             longitud = (!longitud) ? valor.length : longitud;
             if(this.validarCadena(indicativo, valor, tipoDato, longitud)){
                 if(RegExp(regexp, 'g').test(valor)){
                     return true
-                }else throw new Error(messageError)
+                }else throw new Error(mensajeError)
             }
         } catch (errno) {
             console.error(errno);
